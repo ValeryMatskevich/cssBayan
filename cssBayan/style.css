@@ -145,6 +145,10 @@ h1 {
         width: 10rem;
         padding: 1rem 0;
     }
+
+    .closer {
+        opacity: 1;
+    }
 }
 
 
@@ -170,5 +174,9 @@ h1 {
         height: 9rem;
         width: 9rem;
         padding: 1rem 0;
+    }
+
+    .closer {
+        opacity: 1;
     }
 }
