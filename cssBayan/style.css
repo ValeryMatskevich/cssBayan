@@ -54,32 +54,30 @@ h1 {
     appearance: none;
 }
 
-.mem-input:checked ~ .mem-title .mem-png {
-    height: 100%;
-    visibility: visible;
-    padding: 1rem;
-}
-
-
 .mem-png {
     height: 0;
-    padding: 1rem;
     display: block;
     margin: 0 auto;
     transition: all 0.6s ease-in-out;
 }
 
 
-.mem-input:checked ~ .mem-inner .closer {
+.mem-input:checked ~ .mem-title .mem-png {
+    height: 20rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.mem-input:checked ~ .mem-title .mem-inner .closer {
     transform: rotate(45deg)
 }
 
-.mem-input:checked ~ .mem-inner {
+.mem-input:checked ~ .mem-title .mem-inner {
     color: black;
 }
 
 .mem-title:active .mem-png {
-    transform: scale(1.1);
     opacity: 0.6;
 }
 
@@ -94,10 +92,7 @@ h1 {
 }
 
 
-
 @media (hover: hover) {
-    
-
     .memes:hover {
         color: black;
         cursor: pointer;
@@ -120,8 +115,6 @@ h1 {
 }
 
 @media (max-width: 1920px) {
-   
-
     h1 {
         font-size: 4rem;
     }
@@ -143,11 +136,17 @@ h1 {
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .mem-input:checked ~ .mem-title .mem-png {
+        height: 10rem;
+        width: 10rem;
+        padding: 1rem 0;
     }
 }
 
@@ -163,11 +162,17 @@ h1 {
     }
 
     h2 {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .mem-input, .closer {
         font-size: 1rem;
+    }
+
+    .mem-input:checked ~ .mem-title .mem-png {
+        height: 9rem;
+        width: 9rem;
+        padding: 1rem 0;
     }
 
 
