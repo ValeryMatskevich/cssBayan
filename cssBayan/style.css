@@ -1,7 +1,7 @@
 body {
     font-family: 'Montserrat Alternates', Arial, sans-serif;
-    color: red;
-    background-color: white;
+    color: rgb(82, 82, 238);
+    background-color: yellow;
 }
 
 * {
@@ -82,12 +82,13 @@ h1 {
 }
 
 .mem-title:active .mem-inner {
-    color:red;
+    color:rgb(82, 82, 238);
+    ;
     opacity: 0.6;
 }
 
 .mem-title:active .closer {
-    color:red;
+    color:rgb(82, 82, 238);
     opacity: 0.6;
 }
 
